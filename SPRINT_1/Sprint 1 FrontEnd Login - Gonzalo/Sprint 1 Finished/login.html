@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Recursos/style-login.css">
+    <link rel="icon" type="image/png" href="D:\DAW\TFG\Sprint 1\Recursos\favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <div class="container">
+
+        <div class="login-box">
+            <h2 >Inicia Sesión</h2>
+            <form>
+                <input type="text" name="usuario" value="" placeholder="Nombre De Usuario o Correo Electronico">
+                <input type="password" name="contrasena" value="" placeholder="Contraseña">
+                <button type="submit">Continuar</button>
+            </form>
+
+            <div class="separador">
+                <span>o</span>
+            </div>
+
+                <div class="login-google" id="g_id_onload"
+                    data-client_id="TU_CLIENT_ID_AQUI"
+                    data-callback="handleCredentialResponse">
+                </div>
+                <div class="g_id_signin"
+                    data-type="standard"
+                    data-size="large"
+                    data-theme="outline"
+                    data-text="signin_with"
+                    data-shape="pill">
+                </div>
+                <p class="link"><a href="register.html">¿No Tienes Cuenta? Crear Una</a></p>
+                <script src="https://accounts.google.com/gsi/client" defer></script>     
+        </div>        
+    </div>
+</body>
+</html>
